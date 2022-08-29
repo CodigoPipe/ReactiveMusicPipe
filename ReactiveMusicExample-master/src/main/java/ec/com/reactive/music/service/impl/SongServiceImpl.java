@@ -71,8 +71,8 @@ public class SongServiceImpl implements ISongService {
         return this.iSongRepository
                 .findById(idSong)
                 .switchIfEmpty(Mono.error(new Throwable(HttpStatus.NOT_FOUND.toString())))
-                .flatMap(album -> this.iSongRepository
-                        .deleteById(album.getIdAlbum())
+                .flatMap(song -> this.iSongRepository
+                        .deleteById(song.getIdSong())
                         .map(monoVoid -> new ResponseEntity<>(idSong, HttpStatus.ACCEPTED)))
                 .thenReturn(new ResponseEntity<>(idSong, HttpStatus.ACCEPTED))
                 .onErrorResume(throwable -> Mono.just(new ResponseEntity<>(HttpStatus.NOT_FOUND)));
