@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/ReactiveMusicExample-master.iml" filepath="$PROJECT_DIR$/.idea/ReactiveMusicExample-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ReactiveMusicExample-master/music.iml" filepath="$PROJECT_DIR$/ReactiveMusicExample-master/music.iml" />
+    </modules>
+  </component>
+</project>
